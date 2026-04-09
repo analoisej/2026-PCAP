@@ -1,0 +1,13 @@
+'''
+Problema; Becrowd| 1000
+Data: 2026.04.09
+Estudante: Ana Loise Jovino Prado
+'''
+#Objetivo: exibir a mensagem "Hello World!"
+#---ÁNALISE--- (LIAC)
+#Entrada: nenhuma 
+#Processamento: nenhum 
+#Saída: mostrar a frase "Hello Wolrd!"
+
+
+print('Hello World!')
