@@ -8,8 +8,8 @@ Estudante: Ana Loise Jovino Prado
  #Entrada: 3 valores com uma casa decimal 
  #Saída: imprimir a mensagem "MEDIA"
 
- A = int(input())
- B = int(input())
- C = int(input())
- media = (A * 2 + B * 3 + C * 5) / 10.0
- print(f"MEDIA = {media:5f}")
+ A = float(input())
+ B = float(input())
+ C = float(input())
+ MEDIA = (A * 2 + B * 3 + C * 5) / 10
+ print(f"MEDIA = {MEDIA:5f}")
