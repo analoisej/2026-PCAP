@@ -1,7 +1,7 @@
 '''
 Problema: beecrowd |1037
-Data: 2026.05.10
-Estudante: Ana Loise Jovino Prado
+Data: 2026.05.13
+Estudante: Ana Loise Jovino Prado   
 '''
 #Objetivo: Leia um valor de ponto flutuante com duas casas decimais. Este valor representa um valor monetário.
 #Entrada: O programa deve ler um valor de ponto flutuante com duas casas decimais.
