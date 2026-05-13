@@ -1,8 +1,9 @@
 '''
-Problema: beecrowd |1012
+Problema: beecrowd |1013
 Data: 2026.05.13
 Estudante: Ana Loise Jovino Prado   
 '''
+
 #Objetivo:Fazer um programa que leia três valores e apresente o maior dos três valores lidos.
 #---ANALISE(liac)---
 #Entrada: três valores inteiros 
