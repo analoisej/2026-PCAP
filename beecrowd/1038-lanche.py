@@ -7,9 +7,17 @@ Estudante: Ana Loise Jovino Prado
 #---ANALISE(LIAC)---
 #Entrada: dois valores inteiros 
 #Saida: "Total: R$" seguido do valor a ser pago
-line = input().split()
-cod = int(line[0])
-qtd = int(line[1])
-precos = {1: 4.00, 2: 4.50, 3: 5.00, 4: 2.00, 5: 1.50}
-total = precos [cod] * qtd
-print(f"Total: R$ {total:.2f}")
+linha = input().split()
+codigo = int(linha[0])
+quantidade = int(linha[1])
+if codigo ==1:
+    total = quantidade * 4.00
+elif codigo == 2:
+    total = quantidade * 4.50
+elif codigo == 3: 
+    total = quantidade * 5.00
+elif codigo == 4:
+    total = quantidade * 2.00
+elif codigo == 5:
+    total = quantidade * 1.50
+print (f"Total: R$ {total:.2f}")

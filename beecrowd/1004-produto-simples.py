@@ -3,7 +3,7 @@ Problema: beecrowd | 1004
 Data:2026.04.09
 Estudante: Ana Loise Jovino Prado
 '''
-#calcular dois valores 
+#Objetivo: ler dois valores inteiros e calcular o produto entre estes dois valores
 #--- ANÁLISE (LIAC)
 # Entrada: 2 valores inteiros 
 # Processamento: soma de A + B 
