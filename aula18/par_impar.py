@@ -1,4 +1,6 @@
-# ===============================
+
+
+## ===============================
 # Disciplina : Pensamento Computacional, Algortitmos e Programação (PCAP)
 # Projeto    : Jogo "Par ou Impar"
 # Arquivo    : par_impar.py
@@ -26,7 +28,6 @@ pontos_jogador = 0
 pontos_maquina = 0 
 
 for rodada in range (0, 5):
-    print(f"--- Rodada, {rodada} ---")
 
     jogada_maquina = random.randint(0, 5)
     numero_jogador = int(input("Sua jogada (0, 5): "))
