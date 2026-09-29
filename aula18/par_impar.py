@@ -34,7 +34,7 @@ for rodada in range (0, 5):
     jogada_jogador = input("Sua jogada: ").lower().strip()
     soma = jogada_maquina + numero_jogador
 
-    if jogada_jogador not in opcoes:
+    if jogada_jogador not in opcoes:}
         print("Inválida! Você perde a rodada!")
         pontos_maquina = pontos_maquina + 1
     else:
