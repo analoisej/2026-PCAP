@@ -1,5 +1,5 @@
 /*Comentario de Bloco
-Programa: 1078.c
+Programa: 1077.c
 Data: 2026.10.08
 Autor: Ana Loise Jovino Prado
 */
@@ -11,9 +11,8 @@ int main() {
 
     scanf("%d", &n);
 
-    for (i = 1; i <=10; i++){
-
-        printf("%d x %d = %d\n", i, n, i * n);
+    for (i = 2; i <= n; i = i + 2 ) {
+        printf("%d^2 = %d\n", i, i * i);
     }
 
     return 0;
