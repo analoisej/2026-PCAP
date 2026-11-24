@@ -2,10 +2,16 @@
 * Disciplina: 2026-PCAP
 * Projeto   : MeuApp v5.0 - o Fliperama em Java (Aula 33)
 * Autor     : Ana Loise Jovino Prado
-* LIAC      : Menu do Fliperama em Java: metodos que desenham, um que le um numero dentro de uma faixa, e o laco que so para no 0.
+* LIAC      : Menu com validacao e cadastro de jogadores: cada jogadro e uma ficha (classe Jogador) guardada numa lista que cresce.
 */
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+class Jogador {
+    String apelido;
+    int partidas;
+}
 
 public class Fliperama {
     static final String DONO = "Ana Loise";
@@ -41,10 +47,35 @@ public class Fliperama {
         }
         return numero;
     }
+    static String LerTexto(String mensagem) {
+        System.out.print(mensagem + ": ");
+        return teclado.nextLine();
+    }
+    static void cadastrar(ArrayList<Jogador> jogadores) {
+        Jogador novo = new Jogador();
 
+        titulo("NOVO JOGADOR");
+        novo.apelido = LerTexto("Apelido");
+        novo.partidas = 0;
+        jogadores.add(novo);
+        System.out.println("Jogador " + novo.apelido + " cadastrado.");
+    }
+    static void listar(ArrayList<Jogador> jogadores) {
+        Jogador j;
+        int i, qtd = jogadores.size();
+
+        titulo("JOGADORES CADASTRADOS");
+        if (qtd == 0) {
+            System.out.println("Nenhum jogador cadastrado ainda.");
+        }
+        for (i = 0; i < qtd; i++) {
+            j = jogadores.get(i);
+            System.out.println(j.apelido + " | " + j.partidas + " partidas");
+        }
+    }  
     static void mostrarMenu() {
         linha();
-        System.out.println(" FLIPERAMA DA " + DONO);
+        System.out.println(" FLIPERAMA DO " + DONO);
         linha();
         System.out.println("[1] Adivinhe o Numero");
         System.out.println("[2] Cadastrar jogador");
@@ -54,6 +85,7 @@ public class Fliperama {
     }
 
     public static void main(String[] args) {
+        ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
         int opcao;
 
         mostrarMenu();
@@ -62,9 +94,9 @@ public class Fliperama {
             if (opcao == 1) {
                 System.out.println("O jogo entra na Fase 3.");
             } else if (opcao == 2) {
-                System.out.println("O cadastri entra na Fase 2.");
+                cadastrar(jogadores);
             } else {
-                System.out.println("A lista entra na Fase 2.");           
+                listar(jogadores);
         }
         mostrarMenu();
         opcao = lerNumero("Sua escolha", 0, 3);
